@@ -93,6 +93,7 @@ body {
     
 .cnt-para {
     flex: 70%;
+    padding-inline: 24px;
     }
 .cnt-img {
     margin: 0;
