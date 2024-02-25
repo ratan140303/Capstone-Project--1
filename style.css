@@ -1,10 +1,129 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    border: border-box;
+/* general purpose styles */
+.center-xy {
+    /* center from both the axis */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+* {
+    box-sizing: border-box;
+    
+}
+/* styles for elements*/
+body {
+    background: aqua;
+    margin: 0;
+}
+
+.main {
+    height: 1wh;
+    width: 1wh;
+    min-width: 360px;
+    background-image:linear-gradient(to bottom, #c6a8a8,orange,yellow) ;
+    background-repeat: no-repeat;
+    padding: 10px;
+
+}
+
+#header {
+    padding: 4px;
+    text-align: center;
+    color: steelblue;
+    font-family: cursive;
+    font-size:3em;
+}
+#head1 {
+    
+}
+.description {
     color: white;
+    font-family: monospace;
+    width: 80%;
+    margin: auto;
+    text-align: center;
 }
-body{
-    background-color: rgb(10, 3, 2);
-    padding: 20px;
+.navbar {
+    margin: 12px auto;
+    padding: 0;
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+
 }
+.navbar a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.6em;
+    margin: 12px;
+    padding: 6px 20px;
+    background: red;
+    height: 100%;
+    border-radius: 12px ;
+}
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.s-list {
+    display: none;
+}
+.card {
+    margin:10px auto;
+    max-width: 1080px;
+    min-width: 420px;
+    padding: 5px;
+    background: blanchedalmond;
+    color: #111111;
+    border-radius: 20px;
+    padding-inline: 10px;
+    height: auto;
+}
+.card-name {
+    color: black;
+    font-size:2em;
+}
+.content {
+    font-size: 1.5em;
+    background: #dddddd;
+    padding: 12px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    }
+    
+.cnt-para {
+    flex: 70%;
+    }
+.cnt-img {
+    margin: 0;
+    height: auto;
+    flex: 30%;
+ }
+
+ .cnt-img img {
+    width: 100%;
+ }
+
+ /* Making content responsive */
+
+ @media screen and (max-width:700px) {
+    .cnt-img, .cnt-para {
+        flex: 100%;
+    }
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+ }
+
+ .footer {
+    text-align: center;
+    font-size: 1em;
+ }
+ .footer a {
+    text-decoration: inherit;
+    font-weight:bold ;
+ }
