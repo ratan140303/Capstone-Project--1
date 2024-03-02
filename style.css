@@ -42,6 +42,7 @@ body {
     margin: auto;
     text-align: center;
 }
+/* Styles for a navigation bar */
 .navbar {
     margin: 12px auto;
     padding: 0;
@@ -56,8 +57,8 @@ body {
     text-align: center;
     text-decoration: none;
     font-size: 1.6em;
-    margin: 12px;
     padding: 6px 20px;
+    margin:12px 0 0 0;
     background: red;
     height: 100%;
     border-radius: 12px ;
@@ -66,25 +67,27 @@ body {
   background-color: #ddd;
   color: black;
 }
-
+/* Designing a common layout for a general section */
 .card {
     margin:10px auto;
     max-width: 1080px;
     min-width: 420px;
     padding: 5px;
     background: blanchedalmond;
-    color: #111111;
+    color: #333333;
+    font-family: verdana;
     border-radius: 20px;
     padding-inline: 10px;
     height: auto;
 }
-.card-name {
+.cnt-name {
     color: black;
     font-size:2em;
+    margin: 18px 32px;
 }
+/* Area under a card */
 .content {
-    font-size: 1.5em;
-    background: #dddddd;
+    font-size: 1.2em;
     padding: 12px;
     margin-bottom: 10px;
     display: flex;
@@ -93,16 +96,30 @@ body {
     
 .cnt-para {
     flex: 70%;
-    padding-inline: 24px;
+    padding-inline: 12px;
+    text-align: justify;
     }
+#cnt-para-1 {
+    border-left: 2px solid grey;
+    padding: 0 0 0 12px;
+}
+.content ul {
+    padding: 0 18px 0 18px;
+}
+.content ul li {
+    margin:12px 0 0 0;
+}
+/* image and paragraph layout */
 .cnt-img {
     margin: 0;
-    height: auto;
     flex: 30%;
- }
+}
 
  .cnt-img img {
-    width: 100%;
+    width:100%;
+    display: block;
+    margin-inline: auto;
+    border-radius: 12px;
  }
 
  /* Making content responsive */
@@ -116,8 +133,32 @@ body {
         height: auto;
         width: 100%;
     }
+    .navbar a {width: 100%}
  }
+/* Designs related to profile cards */ 
 
+.profile-card {
+    height: 380px;
+    width: 240px;
+    border-radius: 10px;
+    margin: 12px;
+    flex-direction: column;
+}
+.profile-pic img{
+    height: 180px;
+    width: 180px;
+    border-radius: 100%;
+    margin: 0 0 18px 0 ;
+
+}
+/* Setting colors  for each profile card */
+#profile-card-1 {background: lightgray;}
+#profile-card-2 {background: slategrey;}
+#profile-card-3 {background: dimgrey;}
+#profile-card-4 {background: darkgrey;}
+#profile-card-5 {background: darkslategrey;}
+
+/* Footer styles */
  .footer {
     text-align: center;
     font-size: 1em;
