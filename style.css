@@ -17,7 +17,7 @@ body {
 
 .main {
     height: 1wh;
-    width: 1wh;
+    width: 100%;
     min-width: 360px;
     background-image:linear-gradient(to bottom, #c6a8a8,orange,yellow) ;
     background-repeat: no-repeat;
