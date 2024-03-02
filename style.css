@@ -144,7 +144,7 @@ body {
     margin: 12px;
     flex-direction: column;
 }
-.profile-pic img{
+.profile-pic img {
     height: 180px;
     width: 180px;
     border-radius: 100%;
