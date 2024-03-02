@@ -88,8 +88,7 @@ body {
 /* Area under a card */
 .content {
     font-size: 1.2em;
-    padding: 12px;
-    margin-bottom: 10px;
+    margin:10px 0 10px 0;
     display: flex;
     flex-wrap: wrap;
     }
@@ -99,9 +98,7 @@ body {
     padding-inline: 12px;
     text-align: justify;
     }
-#cnt-para-1 {
-    border-left: 2px solid grey;
-    padding: 0 0 0 12px;
+
 }
 .content ul {
     padding: 0 18px 0 18px;
@@ -139,7 +136,7 @@ body {
 
 .profile-card {
     height: 380px;
-    width: 240px;
+    width: 280px;
     border-radius: 10px;
     margin: 12px;
     flex-direction: column;
